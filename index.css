@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background: #0082e6;
+  width: 100%;
+  height: 80px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.logo {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: max-content;
+  padding: 40px 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.on img,
+.chap img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.chap p {
+  padding: 40px 0;
+}
+.chap button {
+  border: 0;
+  background-color: #f53838;
+  color: #fff;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+}
+.otadiv {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dim {
+  text-align: center;
+}
+
+.parent {
+  height: max-content;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 300px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.icon p {
+  padding: 10px;
+}
+
+.icon button {
+  color: #fbfbfb;
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 5px 30px;
+  background: #f53838;
+}
+
+aside {
+  padding: 40px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.card777 {
+  width: 300px;
+  text-align: center;
+  border: 1px solid rgb(150, 146, 146);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.parent777 {
+  padding: 40px 100px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pasi p {
+  padding: 10px;
+}
+
+.parent777 button {
+  width: 250px;
+  height: 60px;
+  color: #fbfbfb;
+  border: 0;
+  background-color: #f53838;
+  border-radius: 10px;
+}
+
+.rasm {
+  padding: 40px 100px;
+}
+
+.rasm img {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  background-color: white;
+  height: max-content;
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media all and (max-width: 1216px) {
+  footer {
+    width: 100%;
+    background-color: #fff;
+    height: max-content;
+    padding: 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media all and (max-width: 970px) {
+  header {
+    height: max-content;
+    flex-direction: column-reverse;
+    padding: 50px 100px;
+  }
+  .chap {
+    text-align: center;
+  }
+  .on {
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    background-color: #fff;
+    height: max-content;
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  footer div{
+    text-align: center;
+  }
+  footer div p{
+    padding: 7px;
+  }
+}
+
+@media all and (max-width: 952px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 858px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.9s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover .active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+  }
+
+  .parent777 {
+    padding: 40px;
+    height: max-content;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 478px) {
+  footer {
+    width: 100%;
+    background-color: #fff;
+    height: max-content;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
